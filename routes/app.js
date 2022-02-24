@@ -49,6 +49,8 @@ module.exports = function () {
 
     router.post('/usersearch', authHandler.isAuthenticated, appHandler.userSearch)
 
+    router.post('/usersearchordered', authHandler.isAuthenticated, appHandler.userSearchOrdered)
+
     router.post('/ping', authHandler.isAuthenticated, appHandler.ping)
 
     router.post('/products', authHandler.isAuthenticated, appHandler.productSearch)
