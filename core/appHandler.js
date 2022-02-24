@@ -10,6 +10,17 @@ module.exports.userSearch = function (req, res) {
 	var query = "SELECT name,id FROM Users WHERE login='";
 	query += req.body.login;
 	query += "'";
+	execQuery(query);
+}
+
+module.exports.userSearchOrdered = function (req, res) {
+	var query = "SELECT name,id FROM Users WHERE login='";
+	query += req.body.login;
+	query += "' ORDER BY id";
+	execQuery(query);
+}
+
+function execQuery (query){
 	db.sequelize.query(query, {
 		model: db.User
 	}).then(user => {
