@@ -20,7 +20,7 @@ The blog post for this release is at https://blog.appsecco.com/damn-vulnerable-n
 
 ## Quick start
 
-Try DVNA using a single command with Docker. This setup uses an SQLite database instead of MySQL
+Try DVNA using a single command with Docker. This setup uses an SQLite database instead of MySQL.
 
 ```bash
 docker run --name dvna -p 9090:9090 -d appsecco/dvna:sqlite
