@@ -84,7 +84,7 @@ Start the application using the official image
 docker run --name dvna-app --env-file vars.env --link dvna-mysql:mysql-db -p 9090:9090 appsecco/dvna
 ```
 
-Access the application at http://127.0.0.1:9090/ and start testing!
+Access the application at http://127.0.0.1:9090/ and start testing!!
 
 ### Manual Setup
 
